@@ -1,0 +1,5 @@
+<library path="lib/liblinear_actuator_controller">
+    <class type="Linear_Actuator::Linear_Actuator_Controller_Config_Parser" base_class_type="Actuator_Config_Parser">
+        <description>Plugin for parsing linear actuator controller config.</description>
+    </class>
+</library>

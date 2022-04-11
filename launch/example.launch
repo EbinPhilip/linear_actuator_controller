@@ -1,0 +1,17 @@
+<launch>
+    <rosparam file="$(find linear_actuator_controller)/config/actuators.yaml" command="load" ns="linear_actuator_controller_example/"/>
+    <rosparam file="$(find linear_actuator_controller)/config/joints.yaml" command="load" ns="linear_actuator_controller_example/"/>
+    <rosparam file="$(find linear_actuator_controller)/config/transmissions.yaml" command="load" ns="linear_actuator_controller_example/"/>
+    <rosparam file="$(find linear_actuator_controller)/config/controllers.yaml" command="load"/>
+
+    <node name="linear_actuator_controller_example" pkg="linear_actuator_controller" type="linear_actuator_controller_example" output="screen"/>
+
+    <node
+        name="controller_spawner"
+        pkg="controller_manager"
+        type="spawner"
+        respawn="false"
+        output="screen"
+        args="joint_state_controller
+            joint3_controller" />
+</launch>

@@ -1,0 +1,5 @@
+<library path="lib/liblinear_actuator_transmission_loader">
+    <class type="Linear_Actuator::Transmission_Loader" base_class_type="Transmission_Loader_Plugin">
+        <description>Plugin for parsing linear actuator transmission config.</description>
+    </class>
+</library>
