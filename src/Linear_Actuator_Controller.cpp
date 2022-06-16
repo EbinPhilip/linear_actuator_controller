@@ -110,9 +110,9 @@ void Linear_Actuator_Controller::enableActuators()
     }
     if (!actuator_status_)
     {
-        std::string error_str = actuator_->actuator_name + ": unexpected error, enable failed";
+        std::string error_str = actuator_->actuator_name + ": enable failed";
         ROS_ERROR(error_str.c_str());
-        stop_flag_ = true;
+        throw std::runtime_error(error_str);
     }
 }
 
