@@ -1,9 +1,13 @@
 <launch>
+    <arg name="port" default="/dev/linear_actuator" />
+    <arg name="baud" default="115200" />
+
     <rosparam file="$(find linear_actuator_controller)/config/actuators.yaml" command="load" ns="linear_actuator_controller_example/"/>
     <rosparam file="$(find linear_actuator_controller)/config/joints.yaml" command="load" ns="linear_actuator_controller_example/"/>
     <rosparam file="$(find linear_actuator_controller)/config/transmissions.yaml" command="load" ns="linear_actuator_controller_example/"/>
     <rosparam file="$(find linear_actuator_controller)/config/controllers.yaml" command="load"/>
 
+    <node name = "ros_serial_node" pkg="rosserial_python" type="serial_node.py" args="_port:=$(arg port) _baud:=$(arg baud)"/>
     <node name="linear_actuator_controller_example" pkg="linear_actuator_controller" type="linear_actuator_controller_example" output="screen"/>
 
     <node
