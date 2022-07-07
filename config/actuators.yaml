@@ -9,5 +9,5 @@ controllers:
         feedback_topic: feedback
         publish_hz: 20.0
         max_position: 90000
-        max_speed: 3600.0
+        max_speed: 2400.0
         max_acceleration: 2400.0
