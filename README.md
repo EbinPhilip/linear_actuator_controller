@@ -1,2 +1,2 @@
 # Linear Actuator Controller
-Implements the Actuator and Actuator Controller interfaces from [Configurable Control Hardware](https://github.com/EbinPhilip/configurable_control_hw/), for [Linear actuators](https://openbuildspartstore.com/linear-actuators-kits/).
+Implements the Actuator and Actuator Controller interfaces from [Configurable Control Hardware](https://github.com/EbinPhilip/configurable_control_hw/), for [Linear actuators](https://openbuildspartstore.com/linear-actuators-kits/) running the ros-serial based [linear actuator firmware](https://github.com/EbinPhilip/linear_actuator_firmware/).
