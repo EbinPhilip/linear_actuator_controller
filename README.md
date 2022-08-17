@@ -1,1 +1,2 @@
-# linear_actuator_controller
+# Linear Actuator Controller
+Implements the Actuator and Actuator Controller interfaces from [Configurable Control Hardware](https://github.com/EbinPhilip/configurable_control_hw/), for [Linear actuators](https://openbuildspartstore.com/linear-actuators-kits/).
