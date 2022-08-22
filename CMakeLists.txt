@@ -137,10 +137,10 @@ target_link_libraries(${PROJECT_NAME}
   ${catkin_LIBRARIES}
 )
 
-add_executable(${PROJECT_NAME}_example 
-  src/linear_actuator_controller_example.cpp
+add_executable(${PROJECT_NAME}_example_deprecated
+  src/linear_actuator_controller_example_deprecated.cpp
 )
-target_link_libraries(${PROJECT_NAME}_example
+target_link_libraries(${PROJECT_NAME}_example_deprecated
   ${PROJECT_NAME}
   ${catkin_LIBRARIES}
 )
